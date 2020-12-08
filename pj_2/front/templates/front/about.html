@@ -1,0 +1,64 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Контакты</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'front/css/main.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'front/css/main.css' %}" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cribs</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="{% url 'home' %}">Главная</a>
+            <a class="nav-link active" href="readles">Функции</a>
+            <a class="nav-link active" href="{% url 'about' %}">Контакты</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <br>
+        <h1 class="cover-heading">Разработчики сайта</h1>
+        <br>
+        <h1 class="cover-heading">Амир</h1>
+          <p><img src="{% static 'front/img/Amir.jpg' %}" width="176" height="200" alt="the Amir"></p>
+          <p class="lead">Татары вперёд!</p>
+          <p class="lead">email: amir.gaifullin@yandex.ru</p>
+          <p class="lead">tel.number: +7(904)676-90-59</p>
+          <h1 class="cover-heading">Григорий</h1>
+           <p><img src="{% static 'front/img/Grisha.jpg' %}" width="176" height="250" alt="the Grisha"></p>
+           <p class="lead">Пацаны самое главное сидим без суицида!</p>
+           <p class="lead">email: reptiloid672@yandex.ru</p>
+           <p class="lead">tel.number: +7(982)407-52-08</p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Сайт создан татарином и сибиряком с Надыма для всех рептилоидов.</p>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
