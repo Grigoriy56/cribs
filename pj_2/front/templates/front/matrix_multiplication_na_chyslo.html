@@ -1,0 +1,63 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Шпаргалка по матану</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'front/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'front/css/main.css' %}" rel="stylesheet">
+     <style>
+         p {
+    text-align: justify; /* Выравнивание по ширине */
+   }
+         </style>
+  </head>
+
+  <body class="text-center">
+
+    <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cribs</h3>
+          <nav class="nav nav-masthead justify-content-center">
+             <a class="nav-link active" href="{% url 'home' %}">Главная</a>
+            <a class="nav-link active" href="https://t.me/amir_gaifullin">Обратная связь</a>
+            <a class="nav-link active" href="{% url 'about' %}">Контакты</a>
+          </nav>
+        </div>
+      </header>
+<main role="main" class="inner cover">
+        <hr size="2" width="600" color="gray">
+    <br>
+        <h1 class="cover-heading">Умножение матриц на число</h1>
+    <br>
+    <p><u>Пример 1 :</u></p>
+      <p><img align="absmiddle"  width="281" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image034.gif' %}" ></p>
+  <p>Всё просто, для того чтобы умножить матрицу на число, нужно <strong>каждый</strong> элемент матрицы умножить на  данное число. В данном случае – на тройку.</p>
+  <p>Еще один полезный пример:</p>
+  <p><img align="absmiddle"  width="112" height="75" src="{% static 'front/img/deistviya_s_matricami_clip_image036.gif' %}" > – умножение матрицы на  дробь</p>
+    <p>А вот если бы <strong>ВСЕ</strong> элементы матрицы делились на 7 <strong>без  остатка</strong>, то тогда можно (и нужно!) было бы поделить.</p>
+  <br>
+    <br>
+    <br>
+    <p><u>Пример 2 :</u></p>
+  <p><img align="absmiddle"  width="163" height="75" src="{% static 'front/img/deistviya_s_matricami_clip_image044.gif' %}" ></p>
+  <p>В этом случае можно и <strong>НУЖНО</strong> умножить все элементы матрицы на <img align="absmiddle"  width="16" height="41" src="img/deistviya_s_matricami_clip_image046.gif' %}" >, так как все числа матрицы делятся на 2 <strong>без остатка</strong>.</p>
+
+
+</main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Сайт создан татарином и сибиряком с Надыма для всех рептилоидов.</p>
+        </div>
+      </footer>
+</div>
+
+

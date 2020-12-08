@@ -1,0 +1,64 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Шпаргалка по матану</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'front/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'front/css/main.css' %}" rel="stylesheet">
+     <style>
+         p {
+    text-align: justify; /* Выравнивание по ширине */
+   }
+         </style>
+  </head>
+
+  <body class="text-center">
+
+    <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cribs</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="{% url 'home' %}">Главная</a>
+            <a class="nav-link active" href="https://t.me/amir_gaifullin">Обратная связь</a>
+            <a class="nav-link active" href="{% url 'about' %}">Контакты</a>
+          </nav>
+        </div>
+      </header>
+<main role="main" class="inner cover">
+        <hr size="2" width="600" color="gray">
+    <br>
+        <h1 class="cover-heading">Транспонирование матриц</h1>
+    <br>
+  <p>Для того чтобы транспонировать матрицу, нужно ее строки  записать в столбцы транспонированной матрицы. </p>
+  <p><u>Пример:</u></p>
+    <p>Транспонировать матрицу <img align="absmiddle"  width="168" height="23" src="{% static 'front/img/deistviya_s_matricami_clip_image018_0000.gif' %}"></p>
+  <p>Строка здесь всего одна и, согласно правилу, её нужно  записать в столбец:</p>
+  <p><img align="absmiddle"  width="83" height="120" src="{% static 'front/img/deistviya_s_matricami_clip_image048.gif' %}"> – транспонированная  матрица.</p>
+  <p>Транспонированная матрица обычно обозначается надстрочным  индексом <img align="absmiddle"  width="11" height="20" src="img/deistviya_s_matricami_clip_image050.gif" > или штрихом справа  вверху.</p>
+  <p><u>Пошаговый пример:</u></p>
+    <p>Транспонировать матрицу <img align="absmiddle"  width="136" height="75" src="{% static 'front/img/deistviya_s_matricami_clip_image014_0001.gif' %}"></p>
+  <p>Сначала переписываем первую строку в первый столбец:</p>
+
+  <p><img align="absmiddle"  width="152" height="157" src="{% static 'front/img/deistviya_s_matricami_clip_image053.jpg' %}"></p>
+  <p>Потом переписываем вторую строку во второй столбец:<br>
+      <img align="absmiddle"  width="144" height="157" src="{% static 'front/img/deistviya_s_matricami_clip_image055.jpg' %}"></p>
+  <p>И, наконец, переписываем третью строку в третий столбец:</p>
+  <p><img align="absmiddle"  width="155" height="157" src="{% static 'front/img/deistviya_s_matricami_clip_image057.jpg' %}"></p>
+  <p>Готово. Образно говоря,   транспонировать – это значит взять матрицу за правый верхний угол и  аккуратно повернуть её «на себя» по  диагонали, «стряхивая» числа в столбцы транспонированной матрицы. Такая вот у меня ассоциация.</p>
+  </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Сайт создан татарином и сибиряком с Надыма для всех рептилоидов.</p>
+        </div>
+      </footer>
+</div>
+

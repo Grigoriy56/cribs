@@ -1,0 +1,76 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Шпаргалка по матану</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'front/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'front/css/main.css' %}" rel="stylesheet">
+     <style>
+         p {
+    text-align: justify; /* Выравнивание по ширине */
+   }
+         </style>
+  </head>
+
+  <body class="text-center">
+
+    <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cribs</h3>
+          <nav class="nav nav-masthead justify-content-center">
+             <a class="nav-link active" href="{% url 'home' %}">Главная</a>
+            <a class="nav-link active" href="https://t.me/amir_gaifullin">Обратная связь</a>
+            <a class="nav-link active" href="{% url 'about' %}">Контакты</a>
+          </nav>
+        </div>
+      </header>
+<main role="main" class="inner cover">
+        <hr size="2" width="600" color="gray">
+    <br>
+        <h1 class="cover-heading">Умножение матриц</h1>
+    <br>
+  <p><strong>Как умножить матрицы?</strong></p>
+  <p>Умножение матриц лучше объяснить на конкретных примерах, так  как строгое определение введет в замешательство (или помешательство)  большинство читателей.</p>
+  <p>Начнем с самого простого:</p>
+  <p><u>Пример:</u></p>
+    <p>Умножить матрицу <strong><img align="absmiddle"  width="92" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image102.gif' %}"></strong> на матрицу <img align="absmiddle"  width="63" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image082_0000.gif' %}"><br>
+    Я буду сразу приводить формулу для каждого случая:</p>
+  <p><img align="absmiddle"  width="196" height="51" src="{% static 'front/img/deistviya_s_matricami_clip_image105.gif' %}"> – попытайтесь сразу  уловить закономерность.</p>
+  <p><strong><img align="absmiddle"  width="315" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image107.gif' %}"></strong></p>
+  <p><u>Пример сложнее:</u></p>
+  <p>Умножить матрицу <img align="absmiddle"  width="95" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image094_0000.gif' %}"> на матрицу <img align="absmiddle"  width="92" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image096_0000.gif' %}"></p>
+  <p>Формула: <img align="absmiddle"  width="309" height="51" src="{% static 'front/img/deistviya_s_matricami_clip_image109.gif' %}"></p>
+  <p><img align="absmiddle"  width="447" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image111.gif' %}"></p>
+  <p>В результате получена так называемая нулевая матрица.</p>
+  <p><strong>Обратите внимание,  что <img align="absmiddle"  width="75" height="19" src="{% static 'front/img/deistviya_s_matricami_clip_image116.gif' %}">! Это почти всегда так!</strong></p>
+  <p>Таким образом, <strong>при умножении переставлять  матрицы нельзя!</strong></p>
+  <p>Если в задании предложено умножить матрицу <img align="absmiddle"  width="21" height="17" src="{% static 'front/img/deistviya_s_matricami_clip_image118.gif' %}"> на матрицу <img align="absmiddle"  width="19" height="19" src="{% static 'front/img/deistviya_s_matricami_clip_image120.gif' %}">, то и умножать нужно именно в таком порядке. Ни в коем  случае не наоборот.</p>
+  <p><u>Переходим к матрицам третьего порядка:</u></p>
+  <p>Умножить матрицу <img align="absmiddle"  width="113" height="75" src="{% static 'front/img/deistviya_s_matricami_clip_image122.gif' %}"> на матрицу <img align="absmiddle"  width="67" height="75" src="{% static 'front/img/deistviya_s_matricami_clip_image124.gif' %}"></p>
+  <p>Формула очень похожа на предыдущие формулы:<br>
+      <img align="absmiddle"  width="272" height="75" src="{% static 'front/img/deistviya_s_matricami_clip_image126.gif' %}"></p>
+  <p><img align="absmiddle"  width="376" height="75" src="{% static 'front/img/deistviya_s_matricami_clip_image128.gif' %}"></p>
+  <p>Умножьте матрицу <img align="absmiddle"  width="113" height="75" src="{% static 'front/img/deistviya_s_matricami_clip_image122_0000.gif' %}"> на матрицу <img align="absmiddle"  width="108" height="75" src="{% static 'front/img/deistviya_s_matricami_clip_image130.gif' %}"></p>
+  <p>Вот готовое решение:</p>
+  <p><img align="absmiddle"  width="507" height="149" src="{% static 'front/img/deistviya_s_matricami_clip_image132.gif' %}" ></p>
+  <br>
+
+
+</main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Сайт создан татарином и сибиряком с Надыма для всех рептилоидов.</p>
+        </div>
+      </footer>
+</div>
+
+

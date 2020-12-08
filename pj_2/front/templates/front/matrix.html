@@ -1,0 +1,46 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Шпаргалка по матану</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'front/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'front/css/main.css' %}" rel="stylesheet">
+
+  <body class="text-center">
+
+    <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cribs</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="{% url 'home' %}">Главная</a>
+            <a class="nav-link active" href="https://t.me/amir_gaifullin">Обратная связь</a>
+            <a class="nav-link active" href="{% url 'about' %}">Контакты</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Действия с матрицами</h1>
+          <br>
+          <p class="lead">
+            <a href="{% url 'mult1' %}" class="btn btn-lg btn-secondary">Умножение матрицы на число</a><br><br>
+              <a href="{% url 'addition' %}" class="btn btn-lg btn-secondary">Сложение матриц</a><br><br>
+              <a href="{% url 'tr' %}" class="btn btn-lg btn-secondary">Транспонирование матриц</a><br><br>
+              <a href="{% url 'mult' %}" class="btn btn-lg btn-secondary">Умножение матриц</a><br><br>
+            </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Сайт создан татарином и сибиряком с Надыма для всех рептилоидов.</p>
+        </div>
+      </footer>
+    </div>

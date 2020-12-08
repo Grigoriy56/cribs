@@ -8,10 +8,16 @@
     <title>Контакты</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'front/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'front/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="{% static 'front/css/main.css' %}" rel="stylesheet">
+      <style>
+            figure img {
+             width: 10%;
+             height: 50%;
+            }
+      </style>
   </head>
 
   <body class="text-center">
@@ -22,7 +28,7 @@
           <h3 class="masthead-brand">Cribs</h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="{% url 'home' %}">Главная</a>
-            <a class="nav-link active" href="readles">Функции</a>
+            <a class="nav-link active" href="https://t.me/amir_gaifullin">Обратная связь</a>
             <a class="nav-link active" href="{% url 'about' %}">Контакты</a>
           </nav>
         </div>
@@ -33,12 +39,12 @@
         <h1 class="cover-heading">Разработчики сайта</h1>
         <br>
         <h1 class="cover-heading">Амир</h1>
-          <p><img src="{% static 'front/img/Amir.jpg' %}" width="176" height="200" alt="the Amir"></p>
+          <p><img src="{% static 'front/img/Amir.jpg' %}" width="700" height="700" alt="the Amir"></p>
           <p class="lead">Татары вперёд!</p>
           <p class="lead">email: amir.gaifullin@yandex.ru</p>
           <p class="lead">tel.number: +7(904)676-90-59</p>
           <h1 class="cover-heading">Григорий</h1>
-           <p><img src="{% static 'front/img/Grisha.jpg' %}" width="176" height="250" alt="the Grisha"></p>
+           <p><img src="{% static 'front/img/Grisha.jpg' %}" width="700" height="750" alt="the Grisha" ></p>
            <p class="lead">Пацаны самое главное сидим без суицида!</p>
            <p class="lead">email: reptiloid672@yandex.ru</p>
            <p class="lead">tel.number: +7(982)407-52-08</p>
