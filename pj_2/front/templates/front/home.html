@@ -1,0 +1,12 @@
+{% extends 'front/base.html' %}
+
+{% block content %}
+ <p><b> Алгебра и геометрия :</b>
+        <select name="thems" class="form-control">
+
+            {% for results in thems %}
+                <option value="{{ results.id }}">{{ results.name }}</option>
+            {% endfor %}
+        </select>
+    </p>
+{% endblock %}

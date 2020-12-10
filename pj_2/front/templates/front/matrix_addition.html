@@ -1,0 +1,62 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Шпаргалка по матану</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'front/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'front/css/main.css' %}" rel="stylesheet">
+     <style>
+         p {
+    text-align: justify; /* Выравнивание по ширине */
+   }
+         </style>
+  </head>
+
+  <body class="text-center">
+
+    <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cribs</h3>
+          <nav class="nav nav-masthead justify-content-center">
+              <a class="nav-link active" href="{% url 'home' %}">Главная</a>
+              <a class="nav-link active" href="https://t.me/amir_gaifullin">Обратная связь</a>
+              <a class="nav-link active" href="{% url 'about' %}">Контакты</a>
+          </nav>
+        </div>
+      </header>
+<main role="main" class="inner cover">
+        <hr size="2" width="600" color="gray">
+    <br>
+        <h1 class="cover-heading">Сумма и разность матриц</h1>
+    <br>
+    НЕ ВСЕ МАТРИЦЫ МОЖНО СКЛАДЫВАТЬ. Для выполнения сложения  (вычитания) матриц, необходимо, чтобы они были ОДИНАКОВЫМИ ПО РАЗМЕРУ.</p>
+  <p>Сумма матриц действие несложное.Например, если дана матрица «два на два», то ее можно  складывать только с матрицей «два на два» и никакой другой!<br>
+      <img align="absmiddle"  width="198" height="80" src="{% static 'front/img/deistviya_s_matricami_clip_image059.jpg' %}"></p>
+  <p><u>Пример:</u></p>
+    <p>Сложить матрицы <img align="absmiddle"  width="100" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image061.gif' %}"> и <img align="absmiddle"  width="103" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image063.gif' %}"></p>
+  <p><strong>Для того чтобы  сложить матрицы, необходимо сложить их соответствующие элементы</strong>:</p>
+    <br>
+  <p><img align="absmiddle"  width="387" height="99" src="{% static 'front/img/deistviya_s_matricami_clip_image065.gif' %}"></p>
+  <p>Для разности матриц правило аналогичное, <strong>необходимо найти разность соответствующих  элементов</strong>.</p>
+  <p><u>Пример:</u></p>
+    <p>Найти разность матриц <img align="absmiddle"  width="128" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image004_0000.gif' %}">, <img align="absmiddle"  width="147" height="48" src="{% static 'front/img/deistviya_s_matricami_clip_image067.gif' %}"></p>
+  <p><img align="absmiddle"  width="544" height="99" src="{% static 'front/img/deistviya_s_matricami_clip_image069.gif' %}"></p>
+  <p>В этом примере целесообразно избавиться от лишних минусов, для этого внесем минус в матрицу <img align="absmiddle"  width="19" height="17" src="{% static 'front/img/deistviya_s_matricami_clip_image071.gif' %}">:</p>
+  <p> <img align="absmiddle"  width="511" height="99" src="{% static 'front/img/deistviya_s_matricami_clip_image073.gif' %}"></p>
+</main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Сайт создан татарином и сибиряком с Надыма для всех рептилоидов.</p>
+        </div>
+      </footer>
+</div>
+

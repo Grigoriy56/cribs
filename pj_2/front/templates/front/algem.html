@@ -1,0 +1,149 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Контакты</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'front/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'front/css/main.css' %}" rel="stylesheet">
+     <style>
+         p {
+    text-align: justify; /* Выравнивание по ширине */
+   }
+         </style>
+  </head>
+
+  <body class="text-center">
+
+    <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cribs</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="{{% url 'home' %}}">Главная</a>
+            <a class="nav-link active" href="https://t.me/amir_gaifullin">Обратная связь</a>
+            <a class="nav-link active" href="{{% url 'about' %}}">Контакты</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <hr size="2" width="600" color="gray">
+<br>
+        <h1 class="cover-heading">Неопределённый интеграл</h1>
+        <br>
+        <p>Начнём с понятия интеграла. Посмотрим на таблицу интегралов. Как и в производных, мы  замечаем несколько правил интегрирования и таблицу интегралов от некоторых  элементарных функций. Нетрудно заметить, что любой табличный интеграл (да и  вообще любой неопределенный интеграл) имеет вид:</p>
+  <p><img align="absmiddle"  width="229" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image002.gif' %}"><br>
+    <br>
+    Сразу разбираемся в обозначениях и терминах:</p>
+  <p><img align="absmiddle"  width="21" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image004.gif' %}">– значок интеграла.</p>
+  <p><img align="absmiddle"  width="36" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image006.gif' %}"> – подынтегральная  функция (пишется с буквой «ы»).</p>
+  <p><img align="absmiddle"  width="20" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image008.gif' %}"> – значок  дифференциала. При записи интеграла и  в ходе решения важно не терять данный значок. Заметный недочет будет.</p>
+  <p><img align="absmiddle"  width="52" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image010.gif' %}"> – подынтегральное  выражение или «начинка» интеграла.</p>
+  <p><img align="absmiddle"  width="36" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image012.gif' %}"> – <strong>первообразная функция</a></strong>.</p>
+  <p><img align="absmiddle"  width="63" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image014.gif' %}"> – множество  первообразных функций. Не нужно сильно загружаться терминами, самое важное, что  в любом неопределенном интеграле к ответу приплюсовывается константа <img align="absmiddle"  width="16" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image016.gif' %}">.</p>
+  <br>
+        <p><strong>Решить интеграл – это  значит найти определенную функцию <img align="absmiddle"  width="61" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image018.gif' %}">, пользуясь некоторыми правилами, приемами и таблицей</strong>.</p>
+  <p>Еще раз посмотрим на запись:</p>
+  <p><img align="absmiddle"  width="135" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image020.gif' %}"></p>
+  <p>Посмотрим в таблицу интегралов.</p>
+  <p>Что происходит? Левые части <img align="absmiddle"  width="60" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image022.gif' %}"> у нас <strong>превращаются</strong> в другие функции: <img align="absmiddle"  width="61" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image018_0000.gif' %}">.</p>
+  <p>Упростим наше определение.</p>
+  <p><strong>Решить неопределенный  интеграл <img align="absmiddle"  width="60" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image022_0000.gif' %}"> – это значит ПРЕВРАТИТЬ  его в определенную функцию <img align="absmiddle"  width="63" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image014_0000.gif' %}">, пользуясь некоторыми правилами, приемами и таблицей</strong>.</p>
+  <p>Возьмем, например, табличный интеграл <img align="absmiddle"  width="143" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image026.gif' %}">. Что произошло? <img align="absmiddle"  width="57" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image028.gif' %}"> превратился в функцию <img align="absmiddle"  width="73" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image030.gif' %}">.</p>
+  <p>Как и в случае с производными, для того, чтобы научиться  находить интегралы, не обязательно быть в курсе, что такое интеграл,первообразная функция с теоретической точки зрения. Достаточно просто  осуществлять превращения по некоторым формальным правилам. Так, в случае <img align="absmiddle"  width="143" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image026_0000.gif' %}"> совсем не обязательно  понимать, почему интеграл<img align="absmiddle"  width="57" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image028_0000.gif' %}"> превращается именно в <img align="absmiddle"  width="73" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image030_0000.gif' %}">. Пока можно принять эту и другие формулы как данность. Все  пользуются электричеством, но мало кто задумывается, как там по проводам бегают  электроны.</p>
+  <p><strong>Так как  дифференцирование и интегрирование – противоположные операции, то для любой  первообразной, которая найдена <u>правильно</u>, справедливо следующее</strong>:</p>
+  <p><img align="absmiddle"  width="199" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image032.gif' %}"></p>
+  <p>Иными словами, <strong>если  продифференцировать правильный ответ, то обязательно должна получиться исходная  подынтегральная функция</strong>.</p>
+  <p>Вернемся к тому же табличному интегралу <img align="absmiddle"  width="143" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image026_0001.gif' %}">.</p>
+  <p>Убедимся в справедливости данной формулы. Берем производную  от правой части:</p>
+  <p><img align="absmiddle"  width="344" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image035.gif' %}"> – исходная  подынтегральная функция.</p>
+  <p>Вот, кстати, стало понятнее, почему к функции <img align="absmiddle"  width="36" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image012_0000.gif' %}"> всегда приписывается  константа <img align="absmiddle"  width="16" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image016_0000.gif' %}">. При дифференцировании константа всегда превращается в ноль. </p>
+  <p><strong>Решить неопределенный  интеграл</strong> – это значит найти <strong>множество</strong> <u>всех</u> первообразных, а не какую-то одну функцию. В рассматриваемом  табличном примере <img align="absmiddle"  width="71" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image039.gif' %}">, <img align="absmiddle"  width="73" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image041.gif' %}">, <img align="absmiddle"  width="92" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image043.gif' %}">, <img align="absmiddle"  width="75" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image045.gif' %}"> и т. д. – все эти  функции являются решением интеграла <img align="absmiddle"  width="57" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image028_0001.gif' %}">. Решений бесконечно много, поэтому записывают коротко: <img align="absmiddle"  width="237" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image047.gif' %}"></p>
+  <p>Таким образом, любой неопределенный интеграл достаточно  легко проверить (в отличие от производных, где хорошую стопудовую проверку  можно осуществить разве что с помощью математических программ). Это некоторая  компенсация за большое количество интегралов разных видов.</p>
+  <p>Переходим к рассмотрению конкретных примеров. Начнем, как и  при изучении производной, <br>с двух правил интегрирования, которые также называют свойствами линейностинеопределенного интеграла:</p>
+  <p><img align="absmiddle"  width="101" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image049.gif' %}"> – постоянный множитель  можно (и нужно) вынести за  знак интеграла.</p>
+  <p><img align="absmiddle"  width="164" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image052.gif' %}"> – интеграл от алгебраической суммы двух функций равен  алгебраической сумме двух интегралов от каждой функции в отдельности. Данное  свойство справедливо для любого количества слагаемых.</p>
+  <p>Как видите, правила, в принципе, такие же, как и  для производных.</p>
+  <p><u>Пример 1</u></p>
+  <p>Найти неопределенный интеграл. Выполнить проверку.<br>
+    <img align="absmiddle" width="245" height="45" src="{% static 'front/img/integraly_primery_reshenij_clip_image054.gif' %}"></p>
+  <p>Решение: Удобнее переписать его на бумагу.<br>
+      <img align="absmiddle"  width="404" height="245" src="{% static 'front/img/integraly_primery_reshenij_clip_image056.gif' %}"></p>
+  <p>(1) Применяем правило <img align="absmiddle"  width="164" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image052_0000.gif' %}">. Не забываем записать значок дифференциала <img align="absmiddle"  width="20" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image008_0000.gif"> под каждым интегралом.  Почему под каждым? <strong><img align="absmiddle"  width="20" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image008_0001.gif"> – это полноценный  множитель</strong>, если расписывать решение совсем детально, то первый шаг следует  записать так:<br>
+      <img align="absmiddle"  width="313" height="93" src="{% static 'front/img/integraly_primery_reshenij_clip_image059.gif"><br>
+  </p>
+  <p>(2) Согласно правилу <img align="absmiddle"  width="101" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image049.gif' %}">, выносим все константы  за знаки интегралов. Обратите внимание, что в последнем слагаемом <img align="absmiddle"  width="25" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image061.gif' %}"> – это константа, её  также выносим.<br>
+    Кроме того, на данном шаге готовим корни и степени для  интегрирования. <strong>Точно так же, как и при  дифференцировании, корни надо представить в виде <img align="absmiddle"  width="20" height="33" src="{% static 'front/img/integraly_primery_reshenij_clip_image063.gif' %}">. Корни и степени, которые располагаются в знаменателе –  перенести вверх. </strong></p>
+  <p><strong>!</strong> <em>Примечание: в отличие от производных, корни в  интегралах далеко не всегда следует приводить к виду <img align="absmiddle"  width="20" height="33" src="{% static 'front/img/integraly_primery_reshenij_clip_image063_0000.gif' %}">, а степени переносить вверх. Например, <img align="absmiddle"  width="69" height="45" src="{% static 'front/img/integraly_primery_reshenij_clip_image065.gif' %}"> – это готовый  табличный интеграл, и всякие китайские хитрости вроде <img align="absmiddle"  width="177" height="49" src="{% static 'front/img/integraly_primery_reshenij_clip_image067.gif' %}"> совершенно не нужны.  Аналогично:<img align="absmiddle"  width="32" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image069.gif' %}"> – тоже табличный  интеграл, нет никакого смысла представлять дробь  в виде <img align="absmiddle"  width="91" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image071.gif' %}">.  Внимательно изучите  таблицу!</em></p>
+  <p>(3) Все интегралы у нас табличные. Осуществляем превращение  с помощью таблицы, используя формулы: <img align="absmiddle"  width="173" height="44" src="{% static 'front/img/integraly_primery_reshenij_clip_image073.gif' %}">, <img align="absmiddle"  width="148" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image075.gif' %}"> и <img align="absmiddle"  width="80" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image077.gif' %}">.<br>
+    Особое внимание обращаю на формулу интегрирования степенной  функции <img align="absmiddle"  width="117" height="44" src="img/integraly_primery_reshenij_clip_image079.gif">, она встречается очень часто, ее лучше запомнить. Следует  отметить, что табличный интеграл <img align="absmiddle"  width="80" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image077_0000.gif' %}"> – частный случай этой  же формулы: <img align="absmiddle"  width="208" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image082.gif' %}">.<br>
+  <strong>Константу <img align="absmiddle"  width="16" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image016_0002.gif' %}"> достаточно  приплюсовать один раз в конце выражения (а не ставить их после каждого  интеграла)</strong>.<br>
+    (4) Записываем  полученный результат в более компактном виде, все степени вида <strong><img align="absmiddle"  width="20" height="33" src="{% static 'front/img/integraly_primery_reshenij_clip_image063_0001.gif' %}"> </strong>снова представляем  в виде корней, степени с отрицательным показателем – сбрасываем обратно в  знаменатель. </p>
+  <p>Проверка. Для того чтобы выполнить проверку нужно  продифференцировать полученный ответ:<br>
+      <img align="absmiddle"  width="405" height="205" src="{% static 'front/img/integraly_primery_reshenij_clip_image085.gif' %}"></p>
+  <p>Получена исходная <strong>подынтегральная  функция</strong>, значит, интеграл найден правильно. От чего плясали, к тому и  вернулись. Знаете, очень хорошо, когда история с интегралом заканчивается  именно так.</p>
+  <p>Время от времени встречается немного другой подход к  проверке неопределенного интеграла, от ответа берется не производная, а <a href="opredelenie_proizvodnoi_smysl_proizvodnoi.html">дифференциал</a>:<br>
+      <img align="absmiddle"  width="288" height="51" src="{% static 'front/img/integraly_primery_reshenij_clip_image087.gif' %}"><br>
+    Кто с первого семестра понял, тот понял, но сейчас  нам важны не теоретические тонкости, а важно то, что с этим дифференциалом дальше  делать. Его необходимо раскрыть, и с формально-технической точки  зрения – это почти то же самое, что найти производную. Дифференциал раскрывается следующим образом: значок <img align="absmiddle"  width="15" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image089.gif' %}"> убираем, справа над  скобкой ставим штрих, в конце выражения приписываем множитель <img align=absmiddle"  width="20" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image008_0002.gif' %}">:</p>
+  <p><img align="absmiddle"  width="436" height="277" src="{% static 'front/img/integraly_primery_reshenij_clip_image092.gif' %}"></p>
+  <p>Получено исходное <strong>подынтегральное  выражение</strong>, значит, интеграл найден правильно.</p>
+  <p>Второй способ проверки мне нравится меньше, так как приходится  дополнительно рисовать большие скобки и тащить значок дифференциала <img align="absmiddle"  width="20" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image008_0003.gif' %}"> до конца проверки.  Хотя он корректнее или «солиднее» что ли.</p>
+  <p>На самом деле я вообще мог умолчать о втором способе  проверки. Дело не в способе, а в том, что мы научились раскрывать дифференциал.  Еще раз.</p>
+  <p><strong>Дифференциал  раскрывается следующим образом</strong>:</p>
+  <p>1) значок <img align="absmiddle"  width="15" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image089_0000.gif' %}"> убираем;<br>
+    2) справа над скобкой ставим штрих (обозначение  производной);<br>
+    3) в конце выражения приписываем множитель <img align="absmiddle"  width="20" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image008_0004.gif' %}">.</p>
+  <p>Например: <img align="absmiddle"  width="259" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image095.gif' %}"></p>
+  <p>Запомните это.</p>
+  <p>Найти неопределенный интеграл. Выполнить проверку.<br>
+      <img align="absmiddle"  width="101" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image099.gif' %}"></p>
+  <p>Решение: Анализируя интеграл, мы видим, что у нас  произведение двух функций, да еще и возведение в степень целого выражения. К  сожалению, на поприще интегральной битвы нет хороших и удобных формул для интегрирования  произведения и частного <img align="absmiddle"  width="162" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image101.jpg' %}">, <img align="absmiddle"  width="118" height="78" src="{% static 'front/img/integraly_primery_reshenij_clip_image103.jpg' %}">.</p>
+  <p>А поэтому, когда дано произведение или частное, всегда имеет  смысл посмотреть, а нельзя ли преобразовать подынтегральную функцию в сумму?</p>
+  <p>Рассматриваемый пример – тот случай, когда можно. Сначала я  приведу полное решение, комментарии будут ниже.</p>
+  <p><img align="absmiddle"  width="437" height="124" src="{% static 'front/img/integraly_primery_reshenij_clip_image105.gif' %}"></p>
+  <p>(1) Используем старую-добрую формулу квадрата суммы <img align="absmiddle"  width="153" height="24" src="{% static 'front/img/integraly_primery_reshenij_clip_image107.gif' %}">, избавляясь от степени.</p>
+  <p>(2) Вносим <img align="absmiddle"  width="19" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image109.gif' %}"> в скобку, избавляясь  от произведения.</p>
+  <p>(3) Используем <a href="{% static 'front/chto_takoe_integral_teorija_dlja_chainikov.html' %}">свойства линейности интеграла</a> (оба правила  сразу).</p>
+  <p>(4) Превращаем интегралы по табличной формуле <img align="absmiddle"  width="173" height="44" src="{% static 'front/img/integraly_primery_reshenij_clip_image073_0000.gif' %}">.</p>
+  <p>(5) Упрощаем ответ. Здесь следует обратить внимание на  обыкновенную неправильную дробь <img align="absmiddle"  width="21" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image111.gif' %}"> – она несократима и в  ответ входит именно в таком виде. Не нужно делить на калькуляторе <img align="absmiddle"  width="57" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image113.gif' %}">! Не нужно представлять ее в виде <img align="absmiddle"  width="57" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image115.gif' %}">! </p>
+  <p>Проверка: <br>
+      <img align="absmiddle"  width="392" height="120" src="{% static 'front/img/integraly_primery_reshenij_clip_image117.gif' %}"></p>
+  <p>Получена исходная <strong>подынтегральная  функция</strong>, значит, интеграл найден правильно. </p>
+  <p>В ходе проверки функцию всегда желательно «упаковать» до  первоначального вида, вынося в данном случае <img align="absmiddle"  width="19" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image109_0000.gif' %}"> за скобки и применяя  формулу сокращенного умножения в обратном направлении: <img align="absmiddle"  width="153" height="24" src="{% static 'front/img/integraly_primery_reshenij_clip_image119.gif' %}"></p>
+  <p><u>Пример 2</u></p>
+  <p>Найти неопределенный интеграл. Выполнить проверку.<br>
+      <img align="absmiddle"  width="117" height="49" src="{% static 'front/img/integraly_primery_reshenij_clip_image123.gif' %}"></p>
+  <p>В данном примере подынтегральная функция представляет собой  дробь. Когда мы видим в подынтегральном выражении дробь, то первой мыслью  должен быть вопрос: А нельзя ли как-нибудь от этой дроби избавиться, или хотя  бы её упростить?</p>
+  <p>Замечаем, что в знаменателе находится одинокий корень из «икс».  Один в поле – не воин, а значит, можно почленно разделить числитель на  знаменатель:<br>
+      <img align="absmiddle"  width="464" height="112" src="{% static 'front/img/integraly_primery_reshenij_clip_image125.gif' %}"></p>
+  <p>Действия с дробными степенями я не комментирую, так как о  них неоднократно шла речь в статьях о производной функции. Если Вас все-таки  ставит в тупик такой пример, как <img align="absmiddle"  width="40" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image127.gif' %}">, и ни в какую не получается правильный ответ <img align="absmiddle"  width="21" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image129.gif' %}">, то рекомендую обратиться к школьным учебникам. В высшей  математике дроби и действия с ними встречаются на каждом шагу.</p>
+  <p>Также обратите внимание, что в решении пропущен один шаг, а  именно, применение правил <img align="absmiddle"  width="101" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image049.gif' %}">, <img align="absmiddle"  width="164" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image052_0001.gif' %}">. Обычно уже при начальном опыте решения интегралов данные  свойства считают само собой разумеющимися и не расписывают подробно.</p>
+  <p>Желаю успехов!</p>
+  <br>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Сайт создан татарином и сибиряком с Надыма для всех рептилоидов.</p>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
