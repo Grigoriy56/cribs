@@ -26,15 +26,14 @@
         <div class="inner">
           <h3 class="masthead-brand">Cribs</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="{{% url 'home' %}}">Главная</a>
+            <a class="nav-link active" href="{% url 'home' %}">Главная</a>
             <a class="nav-link active" href="https://t.me/amir_gaifullin">Обратная связь</a>
-            <a class="nav-link active" href="{{% url 'about' %}}">Контакты</a>
+            <a class="nav-link active" href="{% url 'about' %}">О нас</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <hr size="2" width="600" color="gray">
 <br>
         <h1 class="cover-heading">Неопределённый интеграл</h1>
         <br>
@@ -77,13 +76,13 @@
   <p>Решение: Удобнее переписать его на бумагу.<br>
       <img align="absmiddle"  width="404" height="245" src="{% static 'front/img/integraly_primery_reshenij_clip_image056.gif' %}"></p>
   <p>(1) Применяем правило <img align="absmiddle"  width="164" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image052_0000.gif' %}">. Не забываем записать значок дифференциала <img align="absmiddle"  width="20" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image008_0000.gif"> под каждым интегралом.  Почему под каждым? <strong><img align="absmiddle"  width="20" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image008_0001.gif"> – это полноценный  множитель</strong>, если расписывать решение совсем детально, то первый шаг следует  записать так:<br>
-      <img align="absmiddle"  width="313" height="93" src="{% static 'front/img/integraly_primery_reshenij_clip_image059.gif"><br>
+      <img align="absmiddle"  width="313" height="93" src="{% static 'front/img/integraly_primery_reshenij_clip_image059.gif' %}"><br>
   </p>
   <p>(2) Согласно правилу <img align="absmiddle"  width="101" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image049.gif' %}">, выносим все константы  за знаки интегралов. Обратите внимание, что в последнем слагаемом <img align="absmiddle"  width="25" height="21" src="{% static 'front/img/integraly_primery_reshenij_clip_image061.gif' %}"> – это константа, её  также выносим.<br>
     Кроме того, на данном шаге готовим корни и степени для  интегрирования. <strong>Точно так же, как и при  дифференцировании, корни надо представить в виде <img align="absmiddle"  width="20" height="33" src="{% static 'front/img/integraly_primery_reshenij_clip_image063.gif' %}">. Корни и степени, которые располагаются в знаменателе –  перенести вверх. </strong></p>
   <p><strong>!</strong> <em>Примечание: в отличие от производных, корни в  интегралах далеко не всегда следует приводить к виду <img align="absmiddle"  width="20" height="33" src="{% static 'front/img/integraly_primery_reshenij_clip_image063_0000.gif' %}">, а степени переносить вверх. Например, <img align="absmiddle"  width="69" height="45" src="{% static 'front/img/integraly_primery_reshenij_clip_image065.gif' %}"> – это готовый  табличный интеграл, и всякие китайские хитрости вроде <img align="absmiddle"  width="177" height="49" src="{% static 'front/img/integraly_primery_reshenij_clip_image067.gif' %}"> совершенно не нужны.  Аналогично:<img align="absmiddle"  width="32" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image069.gif' %}"> – тоже табличный  интеграл, нет никакого смысла представлять дробь  в виде <img align="absmiddle"  width="91" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image071.gif' %}">.  Внимательно изучите  таблицу!</em></p>
   <p>(3) Все интегралы у нас табличные. Осуществляем превращение  с помощью таблицы, используя формулы: <img align="absmiddle"  width="173" height="44" src="{% static 'front/img/integraly_primery_reshenij_clip_image073.gif' %}">, <img align="absmiddle"  width="148" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image075.gif' %}"> и <img align="absmiddle"  width="80" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image077.gif' %}">.<br>
-    Особое внимание обращаю на формулу интегрирования степенной  функции <img align="absmiddle"  width="117" height="44" src="img/integraly_primery_reshenij_clip_image079.gif">, она встречается очень часто, ее лучше запомнить. Следует  отметить, что табличный интеграл <img align="absmiddle"  width="80" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image077_0000.gif' %}"> – частный случай этой  же формулы: <img align="absmiddle"  width="208" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image082.gif' %}">.<br>
+    Особое внимание обращаю на формулу интегрирования степенной  функции <img align="absmiddle"  width="117" height="44" src="{% static 'front/img/integraly_primery_reshenij_clip_image079.gif' %}"">, она встречается очень часто, ее лучше запомнить. Следует  отметить, что табличный интеграл <img align="absmiddle"  width="80" height="29" src="{% static 'front/img/integraly_primery_reshenij_clip_image077_0000.gif' %}"> – частный случай этой  же формулы: <img align="absmiddle"  width="208" height="41" src="{% static 'front/img/integraly_primery_reshenij_clip_image082.gif' %}">.<br>
   <strong>Константу <img align="absmiddle"  width="16" height="19" src="{% static 'front/img/integraly_primery_reshenij_clip_image016_0002.gif' %}"> достаточно  приплюсовать один раз в конце выражения (а не ставить их после каждого  интеграла)</strong>.<br>
     (4) Записываем  полученный результат в более компактном виде, все степени вида <strong><img align="absmiddle"  width="20" height="33" src="{% static 'front/img/integraly_primery_reshenij_clip_image063_0001.gif' %}"> </strong>снова представляем  в виде корней, степени с отрицательным показателем – сбрасываем обратно в  знаменатель. </p>
   <p>Проверка. Для того чтобы выполнить проверку нужно  продифференцировать полученный ответ:<br>
