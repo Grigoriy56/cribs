@@ -3,10 +3,14 @@
 {% block title %} Шпаргалки {% endblock %}
 
 {% block content %}
-    <p><b> Алгебра и геометрия :</b>
-        <select name="thems" class="form-control">
-            <option value="1">Неопределённые интегралы</option>
-            <option value="2">Матрицы</option>
-        </select>
-    </p>
+
+        <h1 class="cover-heading">Разделы математики</h1>
+          <br>
+        <h3 class="cover-heading">Алгебра и геометрия:</h3>
+          <br>
+        <p class="lead">
+            <a href="{% url 'algem' %}" class="btn btn-lg btn-secondary">Неопределённые интегралы</a><br><br>
+            <a href="{% url 'matrix' %}" class="btn btn-lg btn-secondary">Матрицы</a><br><br>
+        </p>
+
 {% endblock %}
